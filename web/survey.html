@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Khảo sát sở thích</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+        }
+
+        .container {
+            width: 400px;
+            margin: 80px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+
+        .hobby {
+            margin-top: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background: #FF9800;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #F57C00;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Khảo sát sở thích</h2>
+
+    <form action="SurveyServlet" method="post">
+
+        <label>Tên của bạn:</label>
+
+        <input type="text"
+               name="name"
+               placeholder="Nhập tên"
+               required>
+
+        <div class="hobby">
+
+            <p>Sở thích:</p>
+
+            <label>
+                <input type="checkbox"
+                       name="hobby"
+                       value="Game">
+                Game
+            </label>
+
+            <br>
+
+            <label>
+                <input type="checkbox"
+                       name="hobby"
+                       value="Music">
+                Music
+            </label>
+
+            <br>
+
+            <label>
+                <input type="checkbox"
+                       name="hobby"
+                       value="Sport">
+                Sport
+            </label>
+
+        </div>
+
+        <button type="submit">
+            Gửi khảo sát
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
